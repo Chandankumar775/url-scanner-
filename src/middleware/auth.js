@@ -1,6 +1,6 @@
 function apiKeyAuth(req, res, next) {
   const apiKey = req.headers['x-api-key'];
-  const validKey = process.env.API_KEY || 'urlshield-dev-key-2024';
+  const validKey = process.env.API_KEY || 'urlshield-dev-key-2025';
   
   // In development, allow requests without API key
   if (process.env.NODE_ENV === 'development' && !apiKey) {
